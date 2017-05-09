@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 from math import sqrt
-def runtime():
-    fi = (sqrt(5)+1)/2
+def runtime(): #ana fonksiyon
+    fi = (sqrt(5)+1)/2 #altın oran
     print("Altın oran: {}".format(fi))
     def check_for_fi(x,y):
-        print("Sayıların: {0} ve {1}.".format(a,b))
+        print("Sayıların: {0} ve {1}.".format(a,b)) #kullanıcıya sayıları bildiriliyor
+        #büyük sayının küçük sayıya oranı alınıyor
         if x > y:
             result = x/y
             print("Sayıların oranı: "+str(result))
@@ -15,6 +16,6 @@ def runtime():
             return abs(fi-result)
     a = float(input("İlk sayıyı gir:\n"))
     b = float(input("İkinci sayıyı gir:\n"))
-    print("Girilen değerlerin oranı altın orandan {} uzaktadır\n\n------------\n".format(check_for_fi(a,b)))
-    runtime()
+    print("Girilen değerlerin oranı altın orandan {} uzaktadır\n\n------------\n".format(check_for_fi(a,b))) #fark yazılıyor
+    runtime() #programın tekrarlaması için
 runtime()
